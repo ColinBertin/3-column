@@ -9,6 +9,7 @@
 body {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
     color: hsl(0, 0%, 95%);
 }
 
@@ -16,8 +17,7 @@ body {
 /* ----------------- Layout ----------------- */
 
 main {
-    margin: 100px auto;
-    width: 70%;
+    margin: 150px 200px; 
     display: flex;
 }
 
@@ -71,9 +71,9 @@ p {
 
 button {
     background-color: hsl(0, 0%, 95%);
-    padding: 10px 25px;
+    padding: 15px 35px;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-bottom: 40px;
 }
 
@@ -101,22 +101,39 @@ button:hover {
 
 
 
+@media all and (max-width: 1024px) {
+    main {
+        margin: 100px 150px;
+    }
+
+    .sedans {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 5px 5px;
+    }
+}
 
 
+@media all and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        margin: 80px 20px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
 
 
 /* ----------------- Mobile ----------------- */
 
-/*
-@media all and (max-width: 375px) {
-    body {
-        width: 100vh;
-    }
+@media all and (max-width: 480px) {
 
     main {
-        flex-direction: column;
-        margin: 50px auto;
-        width: 90%;
+        margin: 50px 20px;
     }
 
     .car {
@@ -124,4 +141,3 @@ button:hover {
     }
 }
 
-*/
