@@ -23,6 +23,7 @@ main {
 
 .car {
     padding: 30px 40px 0 40px;
+    min-width: 150px;
 }
 
 .sedans {
